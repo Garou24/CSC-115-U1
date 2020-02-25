@@ -11,7 +11,9 @@ import java.util.Scanner;
 
 public class BoxRocks {
    public static void main(String[] args) {
-      runBoxRocks();
+      
+    runBoxRocks();
+    
    }
 
    public static void runBoxRocks() {
