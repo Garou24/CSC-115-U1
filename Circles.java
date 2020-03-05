@@ -23,5 +23,6 @@ public class Circles {
         System.out.println("CIRCUMFERENCE  = " + (2 * Math.PI * radius));
         System.out.println("AREA = " + (Math.PI * radius * radius));
         System.out.println("ROUNDED AREA = " + Math.round((Math.PI * radius * radius)));
+        scanner.close();
     }
 }

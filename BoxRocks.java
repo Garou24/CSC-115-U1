@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 //Brian Coe
 //02/24/2020
 //Week 5 Programming assignment 1
