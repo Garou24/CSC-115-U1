@@ -49,7 +49,7 @@ public class Months {
                     break;
             }
         
-        System.out.print("Your month is " + month);
+        System.out.print("Your month is " + month + ".");
 
         scanner.close();
     }
