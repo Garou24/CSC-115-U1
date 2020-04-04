@@ -38,7 +38,8 @@ public class Quiz {
 
         int subtr = 0;
         int user_subtr = 0;
-
+        //While this IF statement feels clunky, I wanted to make sure to not repeat
+        //the code used in the example for window dialog
         if (first > second) {
             subtr = first - second;
             System.out.print("What is " + first + " - " + second + "? ");
