@@ -2,7 +2,7 @@
 //04/04/2020
 //Ch 6 Programming Assignment 3
 //This program will ask the user to enter an integer number and will then display back the
-//month of the year that coresponds to that number. If the number entered id less than 1 or
+//month of the year that coresponds to that number. If the number entered is less than 1 or
 //greater than 12 the program will report that their month is invalid.
 //
 import java.util.Scanner;
