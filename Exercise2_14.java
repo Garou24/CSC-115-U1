@@ -17,5 +17,6 @@ public class Exercise2_14 {
       double bmi = weight * 0.45359237 / (height * 0.0254 * height * 0.0254);
    
       System.out.printf(("BMI is ") + "%.2f", bmi);
+      input.close();
    }
 }
