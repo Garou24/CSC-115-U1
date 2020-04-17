@@ -1,9 +1,10 @@
 /* Brian Coe
    04/14/2020
-   Week 11 Programming assignment */
-// this program will not work correctly until the methods are complete!
-
-// you should also modify this so that the menu options are exactly the same as the specs (on the pdf docoument)
+   Week 11 Programming assignment 
+   This program will allow users the ability to generate new passwords and test existing passwords to ensure
+   they adhere to a specific set of security rules. The program will give the user multiple promts to read the
+   rules required for all passwords, create a random password that follows these rules and to also test a password
+   they enter to ensure it follows the rules set by the program.*/
 
 import java.util.Scanner;
 import java.util.Random;
@@ -58,7 +59,7 @@ public class PasswordProg {
 
 	static void displayMenu() {
 		// This method simply displays the menu of options (as per the pdf
-        // specifications) and then ask the user to enter a number
+        // specifications) and then asks the user to enter a number
         System.out.println("Here is your menu of options:" + "\n");
         System.out.println("1. See the password rules" + "\n");
         System.out.println("2. Generate a random password" + "\n");
@@ -137,12 +138,12 @@ public class PasswordProg {
 		
 
 
-     // code goes here to validate the password that was passed to this method
+     	// code goes here to validate the password that was passed to this method
         if (correct_length && lowercase1 && lowercase2 && uppercase1 && uppercase2 && number1 && number2 && special1 && special2) {
             v = true; //if every boolean was set by the entered password then it passes the verification
         }
-     //  return  the boolean value (true or false)
-       return v;
+     	//  return  the boolean value (true or false)
+       	return v;
 
 	}
 
