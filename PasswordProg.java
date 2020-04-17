@@ -124,7 +124,7 @@ public class PasswordProg {
 		//
 
 	  	boolean v = false;   //the variable v will hold the truth value of the validity of the password
-	  	boolean correct_length = input.length() == 8; //Sets a boolean when our password is the correct length of 8
+		boolean correct_length = input.length() == 8; //Sets a boolean when our password is the correct length of 8
 	  	boolean lowercase1 = Character.isLowerCase(input.charAt(0)); //Sets a boolean when our first character is lowercase
 		boolean lowercase2 = Character.isLowerCase(input.charAt(1)); //Sets a boolean when our second character is lowercase
 		boolean uppercase1 = Character.isUpperCase(input.charAt(2)); //Sets a boolean when our third character is uppercase
