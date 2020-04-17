@@ -17,9 +17,9 @@ public class PasswordProg {
 		displayMenu();
 		// Read in input from user and assign to 'choice'
 		int choice = scanner.nextInt();
-      // IF-ELSE statements
+      	// IF-ELSE statements
 
-   	if (choice == 1) {
+   		if (choice == 1) {
 
 			showPasswordSpecifications();
 
@@ -27,7 +27,7 @@ public class PasswordProg {
 
 		    	System.out.println("\nYour password is: " + generateRandomPassword());
 
-	   } else if (choice == 3) {
+	   	} else if (choice == 3) {
 
 		    	System.out.println("\nEnter a password to test: ");
 			   scanner.nextLine();
@@ -99,7 +99,7 @@ public class PasswordProg {
         pasw = pasw + one + two + three + four + five + six + seven + eight;
 
 
-      return pasw;  // return the generated password
+      	return pasw;  // return the generated password
 
 	}
 
