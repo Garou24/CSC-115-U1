@@ -79,12 +79,13 @@ public class PasswordProg {
         String pasw = "";
 
         // code goes here to generate the password, store it in the variable pasw
-        String lower = "abcdefghijklmnopqrstuvwxyz";
-        String upper = lower.toUpperCase();
-        String numbers = "1234567890";
-        String special = "!\"#$%&\'()*+,-./)";
+        String lower = "abcdefghijklmnopqrstuvwxyz"; //Sets a variable that contains all the alphabet in lowercase
+        String upper = lower.toUpperCase(); //Sets a variable that contains the previous letters, but in uppercase
+        String numbers = "1234567890"; //Sets a variable with all the numbers allowed
+        String special = "!\"#$%&\'()*+,-./)"; //Sets a variable with all the special characters
         Random random = new Random();
-        
+		
+		//Takes a random character from each of our string variables and places it at the appropriate spot in the password.
         char one = lower.charAt(random.nextInt(lower.length()));
         char two = lower.charAt(random.nextInt(lower.length()));
         char three = upper.charAt(random.nextInt(upper.length()));
@@ -120,13 +121,26 @@ public class PasswordProg {
 		// POST-CONDITIONS: "true" will be returned if the parameter "input" is
 		// a valid password, as per the specifications. "false" will be returned otherwise
 		//
-		// please remove the next line when done, it is used for debugging
-    	System.out.println("verifyPasswordSpecifications(" + input + ")" );
 
-      boolean v = false;   //the variable v will hold the truth value of the validity of the password
+	  	boolean v = false;   //the variable v will hold the truth value of the validity of the password
+	  	boolean correct_length = input.length() == 8; //Sets a boolean when our password is the correct length of 8
+	  	boolean lowercase1 = Character.isLowerCase(input.charAt(0)); //Sets a boolean when our first character is lowercase
+		boolean lowercase2 = Character.isLowerCase(input.charAt(1)); //Sets a boolean when our second character is lowercase
+		boolean uppercase1 = Character.isUpperCase(input.charAt(2)); //Sets a boolean when our third character is uppercase
+		boolean uppercase2 = Character.isUpperCase(input.charAt(3)); //Sets a boolean when our fourth character is uppercase
+		boolean number1 = Character.isDigit(input.charAt(4)); //Sets a boolean when our fifth character is a number
+		boolean number2 = Character.isDigit(input.charAt(5)); //Sets a boolean when our sixth character is a number
+		char sp1 = (input.charAt(6)); //Creates a char variable from the seventh password character
+		char sp2 = (input.charAt(7)); //Creates a char variable from the eighth password character
+		boolean special1 = !(Character.toString(sp1).matches("[A-Za-z0-9 ]")); //Converts char back to a string and sets boolean if it is not a letter, number or a space
+		boolean special2 = !(Character.toString(sp2).matches("[A-Za-z0-9 ]")); //Converts char back to a string and sets boolean if it is not a letter, number or a space
+		
+
 
      // code goes here to validate the password that was passed to this method
-
+        if (correct_length && lowercase1 && lowercase2 && uppercase1 && uppercase2 && number1 && number2 && special1 && special2) {
+            v = true; //if every boolean was set by the entered password then it passes the verification
+        }
      //  return  the boolean value (true or false)
        return v;
 
