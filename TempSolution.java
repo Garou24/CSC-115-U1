@@ -44,6 +44,7 @@ public class TempSolution
 		double temperature = tt;
 
         while (tt != 999) {
+
 		printMess ();
 
         printTemp(temperature);
@@ -56,6 +57,7 @@ public class TempSolution
         }
 
         System.out.print("\nEnd of execution! Thanks for running my program!");
+
         input.close();
     }
 }
