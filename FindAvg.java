@@ -21,7 +21,7 @@ public class FindAvg {
         double[] doubles = new double[size];
         
         System.out.print("Enter your items(double numbers) separated by a space. Hit the Enter key when done. ");
-        //Read in the input fromt he user into the array
+        //Read in the input from the user into the array
         for (int i = 0; i < doubles.length; i++) {
             doubles[i] = scanner.nextDouble();
         }
