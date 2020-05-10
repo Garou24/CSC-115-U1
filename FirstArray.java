@@ -1,6 +1,7 @@
 //Brian Coe
 //05/10/2020
 //Week 14 Programming Assignment 2
+//This program will create an array of ten randomly generated integers and then display them.
 //
 import java.util.Scanner;
 
